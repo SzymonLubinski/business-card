@@ -1,0 +1,50 @@
+.main{
+    padding: 50px 10px;
+    text-align: center;
+    height: 100%;
+}
+.project{
+    border: 3px solid #194775;
+    width: 70%;
+    min-width: 750px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project div{
+    width: 30%;
+    min-width: 200px;
+}
+.project div p{
+    margin-top: 10px;
+}
+.project div a{
+    margin-top: 10px;
+    color: #194775;
+}
+.project div a:visited{
+    color: #194775;
+}
+.project img{
+    width: 100%;
+    min-width: 500px;
+    border-right: 3px solid #194775;
+}
+
+@media (max-width: 1090px) {
+    .project{
+        display: inline-block;
+        width: 90%;
+        min-width: 0;
+    }
+    .project img{
+        min-width: 0;
+        border-right: none;
+        border-bottom: 3px solid #194775;
+    }
+    .project div{
+        width: 100%;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,51 @@
+.main{
+    padding: 30px 0;
+    text-align: center;
+}
+.main section{
+    padding: 20px 0;
+}
+.main section h2{
+    margin-bottom: 20px;
+}
+.cooperation{
+    border-top: 3px solid #194775;
+    border-bottom: 3px solid #194775;
+}
+.cooperation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cooperation ul li {
+    margin-top: 10px;
+    padding: 10px 0;
+    border: 3px solid #194775;
+    width: 250px;
+}
+.cooperation ul li svg{
+    margin-top: 20px;
+    height: 80px;
+    width: 80px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact svg{
+    color: #c11f26;
+    width: 50px;
+    height: auto;
+}
+.contact p{
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+@media (max-width: 1090px) {
+    .contact p{
+        font-size: 22px;
+    }
+}

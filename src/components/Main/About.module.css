@@ -1,0 +1,14 @@
+.main{
+    text-align: center;
+}
+.main section{
+    margin: auto;
+    padding: 40px 10px;
+    width: 70%;
+    min-width: 500px;
+}
+@media (max-width: 1090px) {
+    .main section{
+        min-width: auto;
+    }
+}
