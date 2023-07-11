@@ -7,6 +7,11 @@
     left: 0;
     position: fixed;
     overflow-x: hidden;
+    text-align: center;
+}
+.nameSection p{
+    color: white;
+    font-size: 2em;
 }
 .imgSection{
     padding-top: 5vh;
@@ -44,5 +49,8 @@
     .navBar{
         width: 100%;
         position: static;
+    }
+    .nameSection p{
+        font-size: 3em;
     }
 }
