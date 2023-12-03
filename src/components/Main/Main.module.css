@@ -1,12 +1,34 @@
 .main{
-    background: #cfdcf1;
+    background-image: linear-gradient(90deg, #197575, #8cbaba);
     margin-left: 300px;
     width: 100%;
     min-height: 100vh;
 }
-
+.contactMobile{
+    display: none;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 10px;
+    background: #194775;
+    border-bottom: 2px solid #5D1438;
+    border-left: 2px solid #5D1438;
+    border-bottom-left-radius: 20px;
+}
+.contactMobile svg{
+    width: 30px;
+    margin-right: 10px;
+}
 @media (max-width: 1090px) {
     .main{
+        padding-top: 100px;
         margin-left: 0;
+    }
+    .contactMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
     }
 }

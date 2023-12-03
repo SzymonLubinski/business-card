@@ -7,24 +7,25 @@
     left: 0;
     position: fixed;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     text-align: center;
+    box-shadow: 3px 2px 35px -6px rgba(38, 38, 38, 1);
 }
 .nameSection p{
     color: white;
     font-size: 2em;
 }
 .imgSection{
-    padding-top: 5vh;
     display: flex;
     justify-content: center;
 }
 .imgSection img{
     border-radius: 50%;
     width: 80%;
-    height: auto;
 }
 .linksSection{
-    margin-top: 5vh;
     display: flex;
     justify-content: space-evenly;
 }
@@ -34,10 +35,9 @@
 .linksSection a svg{
     color: white;
     width: 100%;
-    height: auto;
 }
 .tabsSection{
-    margin-top: 10vh;
+
 }
 .icons{
     height: 50px;
@@ -47,10 +47,9 @@
 
 @media (max-width: 1090px) {
     .navBar{
-        width: 100%;
-        position: static;
+        position: relative;
     }
     .nameSection p{
-        font-size: 3em;
+
     }
 }

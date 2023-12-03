@@ -3,7 +3,7 @@ import {IconContext} from "react-icons";
 import styles from './Nav.module.css';
 import TabBtn from "../UI/TabBtn";
 
-const portrait = require('../../img/portret.jpg');
+const portrait = require('../../img/new_profile1.jpg');
 
 
 export default function Nav() {

@@ -1,8 +1,8 @@
 
 import {tabAction} from "../../store/tab-slice";
-import styles from './TabBtn.module.css';
-import {TabBtnTypes} from "../../models/MyTypes";
+import {TabBtnTypes} from "../../utils/MyTypes";
 import {useAppDispatch} from "../../store/hooks";
+import styles from './TabBtn.module.css';
 
 
 export default function TabBtn (

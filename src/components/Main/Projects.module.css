@@ -1,50 +1,88 @@
 .main{
-    padding: 50px 10px;
     text-align: center;
-    height: 100%;
+}
+.title{
+    padding-top: 15px;
+}
+.projects{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .project{
-    border: 3px solid #194775;
-    width: 70%;
-    min-width: 750px;
-    margin: 10px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.project div{
-    width: 30%;
-    min-width: 200px;
-}
-.project div p{
-    margin-top: 10px;
-}
-.project div a{
-    margin-top: 10px;
-    color: #194775;
-}
-.project div a:visited{
-    color: #194775;
+    width: 500px;
+    height: 560px;
+    background: #194775;
+    margin: 20px 0;
+    border: 2px solid #194775;
+    border-radius: 20px;
+    overflow: hidden;
 }
 .project img{
-    width: 100%;
-    min-width: 500px;
-    border-right: 3px solid #194775;
+    width: 500px;
+    height: 340px;
 }
+.projectInfo{
+    padding: 25px;
+    height: 220px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.projectInfo h1{
+    margin: 0;
+}
+.projectInfo p{
+    margin: 20px 0;
 
+}
+.projectLinks{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.projectLinks button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,98,107, 0.9);
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+.projectLinks button:hover{
+    background: rgba(0,98,107, 0.7);
+}
+.projectSVG{
+    height: 100%;
+    text-align: center;
+}
+.projectSVG svg{
+    height: 100%;
+    width: 50%;
+}
 @media (max-width: 1090px) {
+    .main h1{
+        margin: 0;
+    }
     .project{
-        display: inline-block;
         width: 90%;
-        min-width: 0;
+        height: auto;
     }
     .project img{
-        min-width: 0;
-        border-right: none;
-        border-bottom: 3px solid #194775;
-    }
-    .project div{
         width: 100%;
-        padding: 5px;
+        height: auto;
+    }
+    .projectInfo{
+        height: auto;
     }
 }

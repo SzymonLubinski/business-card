@@ -1,9 +1,9 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {initialStateTypes} from "../models/MyTypes";
+import {initialTabsTypes} from "../utils/MyTypes";
 
 
-const initialState: initialStateTypes = {
-    tab: 'Cooperation',
+const initialState: initialTabsTypes = {
+    tab: 'About me',
 }
 
 const tabSlice = createSlice({

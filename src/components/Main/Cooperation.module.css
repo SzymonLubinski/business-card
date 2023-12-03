@@ -1,33 +1,45 @@
 .main{
-    padding: 30px 0;
-    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.main section{
-    padding: 20px 0;
-}
-.main section h2{
-    margin-bottom: 20px;
+.comment{
+    margin: 30px 0;
+    font-size: 24px;
 }
 .cooperation{
-    border-top: 3px solid #194775;
-    border-bottom: 3px solid #194775;
-}
-.cooperation ul{
-    list-style: none;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.cooperation ul li {
-    margin-top: 10px;
-    padding: 10px 0;
-    border: 3px solid #194775;
-    width: 250px;
+.cooperationItem{
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+    border: 2px solid #5D1438;
+    border-radius: 20px;
+    box-shadow: 0px 0px 24px -3px rgba(93, 20, 56, 1);
+    background: #194775;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
-.cooperation ul li svg{
-    margin-top: 20px;
-    height: 80px;
-    width: 80px;
+.cooperationItem svg{
+    width: 50px;
+    height: auto;
+}
+.contactSection{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contact{
     display: flex;
@@ -45,7 +57,11 @@
 }
 
 @media (max-width: 1090px) {
-    .contact p{
-        font-size: 22px;
+    .cooperationItem{
+        width: 80%;
+        margin: 10px 0;
+    }
+    .contactSection{
+        display: none;
     }
 }

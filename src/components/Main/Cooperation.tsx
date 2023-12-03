@@ -1,4 +1,3 @@
-import {BiLogoGmail} from "react-icons/bi";
 import {FaUserClock, FaUserGraduate} from "react-icons/fa";
 import {BsPencilSquare} from "react-icons/bs";
 import styles from './Cooperation.module.css';
@@ -7,34 +6,43 @@ export default function Cooperation() {
 
     return (
         <div className={styles.main}>
-            <h1>Cooperation</h1>
-            <section className={styles.cooperation}>
-                <h2>Cooperation forms</h2>
-                <ul>
-                    <li>
-                        <h3>employment contract</h3>
-                        <FaUserClock/>
-                        <p>full-time contract</p>
-                    </li>
-                    <li>
-                        <h3>order contract</h3>
-                        <FaUserGraduate/>
-                        <p>contract for a person with the status of a student</p>
-                    </li>
-                    <li>
-                        <h3>assignment</h3>
-                        <BsPencilSquare/>
-                        <p>Custom website development. I can issue
-                            a VAT invoice for the execution of the assignment
-                        </p>
-                    </li>
-                </ul>
+            <section className={styles.comment}>
+                <p>Because I am flexible, I consider various forms of cooperation.</p>
             </section>
-            <section>
+            <section className={styles.cooperation}>
+                <div className={styles.cooperationItem}>
+                        <FaUserClock/>
+                    <h3>Employment Contract</h3>
+                    <p>Full-time Contract</p>
+                </div>
+                <div className={styles.cooperationItem}>
+                        <FaUserGraduate/>
+                    <h3>Order Contract</h3>
+                    <p>Contract for a person with the status of a student</p>
+                </div>
+                <div className={styles.cooperationItem}>
+                        <BsPencilSquare/>
+                    <h3>Assignment</h3>
+                    <p>Custom website development. I can issue
+                        a VAT invoice for the execution of the assignment
+                    </p>
+                </div>
+            </section>
+            <section className={styles.contactSection}>
                 <h2>Contact</h2>
                 <div className={styles.contact}>
-                    <BiLogoGmail/>
-                    <p>lubinskis90@gmail.com</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                         viewBox="0 0 48 48">
+                        <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path>
+                        <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path>
+                        <polygon fill="#e53935"
+                                 points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon>
+                        <path fill="#c62828"
+                              d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path>
+                        <path fill="#fbc02d"
+                              d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
+                    </svg>
+                    <p>szymon.lubinski.it@gmail.com</p>
                 </div>
             </section>
         </div>
